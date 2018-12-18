@@ -164,6 +164,7 @@ class EditCsv:
                     # cats = {'category1':80, 'category2':10, 'category3':10}
                     cats = self.cs.get_top_3_cats_with_prob(complaint_title)
                 except Exception as e:
+                    print(e)
                     break
 
             elif self.group == "SpeakUP":
